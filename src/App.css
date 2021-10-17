@@ -1,38 +1,162 @@
-.App {
+/* Styles go here */
+
+.token {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav b {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+#logo {
+  display: inline-block;
+  margin: 15px; /* margin: 20px was off */
+  float: center;
+  height: 60px;
+  width: auto; /* correct proportions to specified height */
+  border-radius: 50%; /* makes it a circle */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input, textarea { 
+  outline: none;
+}
+
+h1 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+form {
+  position: relative;
+  width: 30%;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.form-inner {
+  padding: 40px;
+}
+
+.form-inner input,
+.form-inner textarea {
+  display: block;
+  width: 40%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #d0dfe8;
+}
+
+.form-inner textarea {
+  resize: none;
+}
+
+button {
+  width: 40%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  border-bottom: 4px solid #3e4f24;
+  background: #5a7233; 
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+button:hover {
+  background: #3e4f24;
+} 
+
+@media (min-width: 568px) {
+  form {
+  width: 60%;
+  }
+}
+
+.demo {
+  position: relative;
+}
+
+.demo .notificationsFrame {
+  z-index: 2;
+  width: 100%;
+  top: 20px;
+  background: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+
+.demo .notificationsFrame .content {
+  position: relative;
+  overflow: hidden;
+}
+
+.demo .notificationsFrame .content .items {
+  position: relative;
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  margin: 10px 10px 10px 10px;
+  display: block;
+  background-color: #cccccc;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.demo .notificationsFrame .content .items .time {
+  display: block;
+  font-size: 11px;
+  line-height: 11px;
+  margin-bottom: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.demo .notificationsFrame .content .items p {
+  font-size: 15px;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.demo .notificationsFrame .content .items p b {
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item {
+  min-height: 200px;
+  background-color: #eee;
 }
+
