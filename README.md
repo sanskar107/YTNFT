@@ -1,14 +1,14 @@
 # Getting Started with YouTube NFT
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-First Clone this repository.
 
-## Install dependencies
-run `npm install`
+## Steps to start the server and mint your NFTs.
+1. Clone this repository.
+2. Run `truffle migrate` to generate the ABIs.
+3. Run `truffle test` to ensure unit tests are passing.
+4. Run `npm install` to install the dependencies.
+5. Run `npm start` to start the development server.
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `yarn start`
 
